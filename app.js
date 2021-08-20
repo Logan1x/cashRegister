@@ -5,6 +5,8 @@ const formSubmit = document.getElementById("form-submit");
 
 const numOfNotes = document.querySelectorAll(".num-of-notes");
 
+const displayTable = document.getElementById("display-table");
+
 const notes = [1000, 500, 100, 20, 10, 5, 2, 1];
 
 formSubmit.addEventListener("submit", (e) => {
@@ -22,6 +24,7 @@ formSubmit.addEventListener("submit", (e) => {
     return;
   }
 
+  displayTable.classList.toggle("hidden");
   const change = cash - bill;
 
   calcBillamount(change);
@@ -46,5 +49,5 @@ const menu = document.querySelector(".mobile-nav");
 
 btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
-  console.log("clicked");
+  // console.log("clicked");
 });

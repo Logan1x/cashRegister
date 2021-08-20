@@ -136,6 +136,7 @@
             focus:ring-indigo-600
             focus:border-transparent
           "
+          required
         />
         <label for="cash-given" class="text-left text-lg">Cash Given</label>
         <input
@@ -152,6 +153,7 @@
             focus:ring-indigo-600
             focus:border-transparent
           "
+          required
         />
         <button
           type="submit"
@@ -166,7 +168,18 @@
           Submit
         </button>
       </form>
-      <table class="table-auto mx-2 md:px-3 md:py-3 my-4 mt-10 text-indigo-600">
+      <table
+        id="display-table"
+        class="
+          hidden
+          table-auto
+          mx-2
+          md:px-3 md:py-3
+          my-4
+          mt-10
+          text-indigo-600
+        "
+      >
         <tr class="">
           <th class="border-2 border-indigo-400 px-6 py-4">Number of Notes</th>
           <td class="num-of-notes border-2 border-indigo-400 px-6 py-4"></td>
