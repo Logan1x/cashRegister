@@ -7,14 +7,12 @@ const numOfNotes = document.querySelectorAll(".num-of-notes");
 
 const displayTable = document.getElementById("display-table");
 
-const notes = [1000, 500, 100, 20, 10, 5, 2, 1];
+const notes = [2000, 500, 100, 20, 10, 5, 2, 1];
 
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
   const bill = Number(billGiven.value);
   const cash = Number(cashGiven.value);
-
-  console.log(bill < cash);
 
   if (bill < 0) {
     alert("Please enter a valid bill amount");
